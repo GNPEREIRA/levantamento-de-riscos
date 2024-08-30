@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Levantamento de Riscos</title>
+</head>
+<body>
+    <main id="conteiner">
+
+        <h1>Identificação de Riscos</h1>
+
+        
+        <!--<section id="identificacao-empresa">
+
+            <fieldset>
+                <legend>Identificação</legend>
+                
+                <div class="id-campos">
+                    <label style="margin-right: 20px;" for="nome-empresa">Empresa</label>
+                    <input type="text" id="nome-empresa" class="entrada1">
+                </div>
+    
+                <div class="id-campos">
+                    <label style="margin-right: 45px;" for="nome-setor">Setor</label>
+                    <input type="text" id="nome-setor" class="entrada1">
+                </div>
+    
+                <div class="id-campos">
+                    <label style="margin-right: 30px;" for="nome-funcao">Função</label>
+                    <input type="text" id="nome-funcao" class="entrada1">
+                </div>
+            </fieldset>
+        </section>-->
+
+        <section id="identificacao-empresa">
+            <fieldset>
+                <legend>Identificação</legend>
+
+                <div class="id-campos">
+                    <input type="text" id="nome-empresa" class="entrada1" placeholder="Empresa">
+                </div>
+    
+                <div class="id-campos">
+                    
+                    <input type="text" id="nome-setor" class="entrada1" placeholder="Setor">
+                </div>
+    
+                <div class="id-campos">
+                    
+                    <input type="text" id="nome-funcao" class="entrada1" placeholder="Função">
+                </div>
+            </fieldset>
+        </section><!--Fim identificação-empresa-->
+        
+        <section id="caracteristicas-empresa">
+            <fieldset>
+                <legend>Característica da Empresa</legend>
+                <div id="caracteristicas">
+                    <div id="caract-checkbox">
+                        <label for=""><input type="checkbox" name="" id="">Área a céu aberto</label>
+                        <label for=""><input type="checkbox" name="" id="">Galpão</label>
+                        <label for=""><input type="checkbox" name="" id="">Sala</label>
+                        <label for=""><input type="checkbox" name="" id="">Serviços externos</label>
+                    </div>
+                    <div id="caract-checkbox">
+                        <label for=""><input type="checkbox" name="" id="">Bicicleta</label>
+                        <label for=""><input type="checkbox" name="" id="">Motocicleta</label>
+                        <label for=""><input type="checkbox" name="" id="">Veículo com ar</label>
+                        <label for=""><input type="checkbox" name="" id="">Veículo sem ar</label>
+                    </div>
+                </div>
+
+                <div id="outras-caracteristicas">   
+                    <label for="outras-caracteristicas">Outro</label>
+                    <input type="text">
+                </div>
+
+                <div class="outras-caracteristicas">
+                    <label for="pe-direito" style="margin-right: 4px;">Pé direito</label>
+                    <select id="pe-direito" class="select-caracteristicas">
+                        <option value=""></option>
+                        <option value="">2,5m</option>
+                        <option value="">3,0m</option>
+                        <option value="">4,0m</option>
+                        <option value="">5,0m</option>
+                        <option value="">6,0m</option>
+                        <option value="">7,0m</option>
+                        <option value="">8,0m</option>
+                        <option value="">9,0m</option>
+                        <option value="">10,0m</option>
+                        <option value="">12,0m</option>
+                        <option value="">14,0m</option>
+                        <option value="">16,0m</option>
+                        <option value="">18,0m</option>
+                        <option value="">20,0m</option>
+                        <option value="">30,0m</option>
+                    </select>
+                    <label for="">Outro <input type="text"></label>
+                </div>
+
+                <div class="outras-caracteristicas">
+                    <label for="" style="margin-right: 12px;">Paredes</label>
+                    <select id="" class="select-caracteristicas">
+                        <option value=""></option>
+                        <option value="">Alvenaria</option>
+                        <option value="">Azulejo</option>
+                        <option value="">Blocos de cimento</option>
+                        <option value="">Madeirite</option>
+                        <option value="">Tijolos</option>
+                    </select>
+                    <label for="">Outro <input type="text"></label>
+                </div>
+
+                <div class="outras-caracteristicas">
+                    <label for="" style="margin-right: 40px;">Piso</label>
+                    <select id="" class="select-caracteristicas">
+                        <option value=""></option>
+                        <option value="">Carpete</option>
+                        <option value="">Cerâmica</option>
+                        <option value="">Cimento grosso</option>
+                        <option value="">Cimento liso</option>
+                        <option value="">Madeira</option>
+                        <option value="">Paviflex</option>
+                        <option value="">Terra batida</option>
+                    </select>
+                    <label for="">Outro <input type="text"></label>
+                </div>
+
+                <div class="outras-caracteristicas">
+                    <label for="" >Cobertura</label>
+                    <select id="" class="select-caracteristicas">
+                        <option value=""></option>
+                        <option value="">Laje</option>
+                        <option value="">Forro de PVC</option>
+                        <option value="">Forro de madeira</option>
+                        <option value="">Telhas de amianto</option>
+                        <option value="">Telhas de aço</option>
+                    </select>
+                    <label for="">Outro <input type="text"></label>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="">Iluminação</label>
+                    <label for=""><input type="checkbox" name="" id="">Artificial</label>
+                    <label for=""><input type="checkbox" name="" id="">Natural</label>   
+                </div>
+
+                <div>
+                    <label for="" style="margin-right: 4px;">Ventilação</label>
+                    <label for=""><input type="checkbox" name="" id="">Artificial</label>
+                    <label for=""><input type="checkbox" name="" id="">Natural</label> 
+                    
+                    <label for="" style="margin-left: 7px;">Tipo</label>
+                    <select class="select-caracteristicas">
+                        <option value=""></option>
+                        <option value="">Ar-condicionado</option>
+                        <option value="">Ventilador</option>
+                    </select>
+                </div>
+            </fieldset>
+        </section>
+
+        <section id="levantamento-riscos">
+            <fieldset>
+                <legend>Levantamento de Riscos</legend>
+
+                <div id="campos-entradas">
+                    <div id="risco-fonte">
+                        <div class="campos">
+                            <label for="risco">Risco</label>
+                            <input id="risco" type="text" onkeyup="maiuscula()">
+                        </div>
+            
+                        <div class="campos">
+                            <label for="fonte">Fonte</label>
+                            <input id="fonte" type="text" onkeyup="maiuscula()">
+                        </div>
+                    </div>
+
+                    <div id="epi-ca">
+                        <div class="campos">
+                            <label for="epi" style="margin-right: 14px;">EPI</label>
+                            <input id="epi" type="text" onkeyup="maiuscula()">
+                        </div>
+                
+                        <div class="campos">
+                            <label for="ca">C.A.</label>
+                            <input id="ca" type="number">
+                        </div>
+                    </div>
+            
+                </div>
+                
+                <div id="botaoAdd">
+                    <button id="btn-adicionar">Adicionar</button>
+                </div>
+            </fieldset>
+        </section>
+
+        <section id="tabelas-risco">
+
+            <fieldset>
+                <legend>Tabelas de Riscos</legend>
+                <div>
+                    <table id="tabela" border="1">
+                        <thead>
+                            <tr>
+                                <th>RISCO</th>
+                                <th>FONTE</th>
+                                <th>EPI</th>
+                                <th>C.A.</th>
+                                <th>AÇÃO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--As linhas serão criadas aqui-->
+                        </tbody>
+                    </table>
+                </div>
+            </fieldset>
+        </section>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
