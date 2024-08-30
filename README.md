@@ -1,0 +1,1 @@
+Este formulário tem o objetivo de registrar riscos ambientais identificados pelo técnico de segurança do trabalho. Não há necessidade de guardar em banco de dados visto que será impresso em PDF, após o preenchimento, e encaminhado para o técnico elaborador via WhatsApp ou e-mail.
